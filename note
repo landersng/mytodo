@@ -1,0 +1,42 @@
+// const containerMain = document.querySelector('.myTodo')
+// console.log(containerMain)
+
+//  Array.from(containerMain).forEach(function(toDo){
+//     toDo.textContent += ' (TO-DO)'
+//  })
+
+//  const mainTodo = document.querySelector('.myTodo')
+//  mainTodo.innerHTML = '<h2> damnnn <h2 />'
+
+// const headCont = document.querySelector('.to-do');
+// console.log('.to-do node type is:', headCont.nodeType)
+// console.log('.to-do name is:', headCont.nodeName)
+// console.log('.to-do node has child node:', headCont.hasChildNodes())
+// headCont.ParentNodes
+// headCont.CloneNodes
+// console.log('containerMain next sibling is:', containerMain.nextSibling)
+// console.log('containerMain next elementsibling is:', containerMain.nextElementSibling)
+// console.log('containerMain previous sibling is:', containerMain.previousSibling)
+// console.log('containerMain previous element sibling is:', containerMain.previousElementSibling)
+
+// containerMain.previousElementSibling.querySelector(' .mainPage h2').innerHTML = '<p> hey this is my to-do <p />'
+
+
+
+
+//   FIRST METHOD ON LEARNING THE DELETE:
+
+// const removeBtn = document.querySelectorAll ('.myTodo .delete');
+// Array.from(removeBtn).forEach(function(butn){  
+//     butn.addEventListener('click', function(o){
+//         const li = o.target.parentElement;
+//         li.parentNode.removeChild(li)
+//     })
+// })
+
+//  FIRST METHOD END
+
+//  NOTE:
+//  you can either turn it to an arry or not when its query selector
+// only id,class,tags that need to be turned into an array before passing in a function
+// Array.from()- turns it into an array

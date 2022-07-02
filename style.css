@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url(./img/colored.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.to-do{
+    background: #191919;
+    position: absolute;
+    width: 500px;
+    top: 15%;
+    left: 30%;
+    border-radius: 40px;
+    padding: 40px;;
+}
+
+ header .mainPage{
+   left: 30px;
+   text-align: center;
+   transform: translate(-50,-50);
+   display: block;
+ 
+}
+
+h2{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.search-box input{
+    border: 0;
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.myTodo{
+    text-align: center;
+}
+.myTodo h3{
+    color: green;
+    font-family:cursive;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.myTodo ul{
+    display: block; 
+    /* border: 3px solid green; */
+    margin-top: 10px;
+}
+
+.myTodo ul li{
+    list-style: none;
+     color: white;
+     font-family: sans-serif;
+     font-size:medium;
+     text-align: start;
+     line-height: 40px;
+     /* transition: all 1s; */
+     
+     /* border-left: 2px solid blue; */
+
+
+}
+
+.myTodo ul li:hover{
+    border-left: 2px solid blue;
+
+}
+
+ .delete{
+    float: right;
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    /* border: 2px solid green; */
+    cursor: pointer;
+    /* clear: right;
+    content: ""; */
+}
+
+.delete:hover{
+    color: yellow;
+
+}
+
+/* .delete:hover{
+    border-bottom: 2px solid green;
+} */
+
+ .delete::after{
+    content: "";
+    display: flex;
+    clear: both;
+    clear: right;
+    margin-right: 30px;
+}
+
+.doings{
+    margin-left: 11px;
+    /* border: 2px solid green; */
+    
+}
+
+.addup{
+    margin-top:35px;
+    /* border: 3px solid green; */
+   flex-direction: column;
+   display: block;
+}
+
+.addup input{
+    width: 70%;
+    height: 35px;
+    border-radius:6px;
+    background-color: coral;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.addup button{
+    width: 60px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: coral;
+    color: #fff;
+}
+
+.addup button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+@media screen and (max-width:360px) {
+    .container{
+        background-size:cover;
+        height:100vh; 
+        /* border: 3px solid green; */
+    }
+    
+    .to-do{
+        width:75%;
+        padding: 0;
+        left: 46px;
+        /* border: 3px solid pink; */
+        
+    }
+
+    header .mainPage{
+        /* border: 3px solid yellow;  */
+        margin-top: 20px;
+
+    }
+
+    h2{
+        font-size:23px;
+    }
+
+    .search-box input{
+        /* border: 3px solid red;  */
+        width: 160px;
+    }
+
+    .myTodo{
+        /* border: 3px solid brown; */
+        width: 87%;
+        margin: 17px 17px;
+        margin-top: 15px;
+    }
+
+    .myTodo ul li{
+        line-height: 60px;
+        /* border: 2px solid blue; */
+    }
+
+    .myTodo ul{
+        width: 85%;
+        padding-left: 35px;
+        
+        /* border: 3px solid green; */
+    }
+
+    .addup{
+        /* border: 2px solid chartreuse; */
+        margin-top: 6px;
+        
+    }
+
+    .addup button{
+        /* border: 2px solid white; */
+        width: 70%;
+    }
+
+    .addup input{
+        /* border: 2px solid lime; */
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .to-do{
+        /* border: 3px solid red; */
+        width: 80%;
+        left: 40px;
+    }
+
+    header .mainPage{
+        /* border: 3px solid yellow; */
+        margin-bottom: 20px; 
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .search-box input{
+        /* border: 3px solid green; */
+        width: 175px;
+    }
+
+    .myTodo{
+        /* border: 3px solid brown; */
+        width: 110%;
+        margin-left: -10px;
+    }
+
+    .myTodo ul{
+        /* border: 3px solid blue; */
+        margin-left: 6px;
+    }
+
+    .myTodo ul li{
+        /* border: 3px solid crimson; */
+        line-height: 65px;
+    }
+
+    .addup{
+         /* border: 2px solid chartreuse; */
+        margin-top: 6px;
+        
+    }
+
+    .addup button{
+        /* border: 2px solid white;  */
+        width: 70%;
+    }
+
+    .addup input{
+        /* border: 2px solid lime; */
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .to-do{
+        /* border: 3px solid red; */
+        width: 88%;
+        left: 20px;
+    }
+
+    header .mainPage{
+        /* border: 3px solid yellow; */
+        margin-bottom: 20px; 
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .search-box input{
+        /* border: 3px solid green; */
+        width: 175px;
+        margin-bottom: 15px;
+    }
+
+    .myTodo{
+        /* border: 3px solid brown; */
+        width: 98%;
+        margin-left: -1px;
+        margin-top: -20px;
+    }
+
+    .doings{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .delete{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .myTodo ul{
+         /* border: 3px solid blue;  */
+        margin-left: 25px;
+        width: 85%;
+    }
+
+    .myTodo ul li{
+        /* border: 3px solid crimson; */
+        line-height: 65px;
+    }
+
+    .addup{
+         /* border: 2px solid chartreuse; */
+        margin-top: 6px;
+        
+    }
+
+    .addup button{
+        /* border: 2px solid white;  */
+        width: 70%;
+    }
+
+    .addup input{
+        /* border: 2px solid lime; */
+        margin-bottom: 6px;
+    }
+}
+
+
